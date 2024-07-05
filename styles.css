@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #ececec; /* Warna latar belakang abu-abu muda */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d50032; /* Warna merah khas Pertamina */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ffffff; /* Warna merah khas Pertamina */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Warna merah khas Pertamina */
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9e001c; /* Warna merah tua khas Pertamina untuk hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.form-section,
+.tabelTransaksi {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #d50032; /* Warna merah khas Pertamina saat fokus */
+    box-shadow: 0 0 5px rgba(213, 0, 50, 0.5); /* Efek bayangan saat fokus */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #d50032; /* Warna merah khas Pertamina */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #9e001c; /* Warna merah tua khas Pertamina untuk hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #750015; /* Warna merah gelap khas Pertamina saat aktif */
+}
+
+.tabelTransaksi h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+@media (max-width: 600px) {
+    header, main {
+        padding: 10px;
+    }
+
+    .form-section,
+    .tabelTransaksi {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+footer {
+    background-color: #5846fe; 
+    color: white;
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

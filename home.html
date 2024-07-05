@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pom Bensin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tono Pom Bensin</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Form Transaksi</a></li>
+                <li><a href="transaksi.php">Daftar Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <form id="transaksiForm" action="proses_transaksi.php" method="POST">
+                <div class="form-group">
+                    <label for="nama">Nama Pelanggan:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bensin">Jenis Bensin:</label>
+                    <select id="bensin" name="bensin" required>
+                        <option value="Premium">Premium</option>
+                        <option value="Pertalite">Pertalite</option>
+                        <option value="Pertamax">Pertamax</option>
+                        <option value="Turbo">Turbo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jumlah">Jumlah Liter:</label>
+                    <input type="number" id="jumlah" name="jumlah" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="harga">Harga per Liter:</label>
+                    <input type="number" id="harga" name="harga" required>
+                </div>
+                <button type="submit">Catat Transaksi</button>
+            </form>
+        </section>
+    <footer>
+        <div class="container">
+        <p>&copy; Saif Brilliantoro (2300018332).</p>
+        </div>
+    </footer>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
